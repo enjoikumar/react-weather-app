@@ -10,6 +10,12 @@ function getCurrentWeather(location){
   );
 }
 
+function getForecast(location){
+  return axios.get(
+    `https://api.openweathermap.org/data/2.5/forecast?q=${location}&cnt=5&appid=${API_KEY}`
+  )
+}
+
 //change the unit to metric, make it a variable, like parsing location and unit
 // function getCurrentWeather(location){
 //   //for real time weather
