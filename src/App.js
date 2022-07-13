@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import './assets/main.scss';
 
 import SearchBar from './components/search-bar';
 import CurrentWeather from './components/current-weather';
 import Forecast from './components/forecast-weather';
 
-import { getCurrentWeather } from './api/open-weather-api.js'
+import { getCurrentWeather, getForecast } from './api/open-weather-api.js'
 
 
 class App extends React.Component {
@@ -19,7 +20,8 @@ class App extends React.Component {
       temp: '',
       feelsLike: '',
       description: '',
-      icon:''
+      icon:'',
+      forecast: []
     };
   }
 
@@ -39,6 +41,12 @@ class App extends React.Component {
         icon: res.data.weather[0].icon
       });
     });
+
+    getForecast(this.state.location).then((res) => {
+      this.setState({
+        forecast: res.data.list
+      })
+    })
   }
 
 
@@ -57,7 +65,7 @@ class App extends React.Component {
           icon={this.state.icon}
         />
 
-        <Forecast />
+        <Forecast forecast={this.state.forecast} />
       </div>
     );
   }
