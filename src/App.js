@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import './assets/main.scss';
+import './assets/forecast.scss';
+
 
 import SearchBar from './components/search-bar';
 import CurrentWeather from './components/current-weather';
@@ -20,6 +22,7 @@ class App extends React.Component {
       temp: '',
       feelsLike: '',
       description: '',
+      windSpeed: '',
       icon:'',
       forecast: []
     };
@@ -29,15 +32,18 @@ class App extends React.Component {
     this.setState({
       location: e.target.value
     })
-  }
+  };
+
 
   onFormSubmit(){
 
     getCurrentWeather(this.state.location).then((res) => {
+      console.log(res.data)
       this.setState({
         temp: res.data.main.temp,
         feelsLike: res.data.main.feels_like,
         description: res.data.weather[0].description,
+        windSpeed: res.data.wind.speed,
         icon: res.data.weather[0].icon
       });
     });
@@ -58,9 +64,12 @@ class App extends React.Component {
           inputChange={e => this.onInputChange(e)}
           formSubmitted={() => this.onFormSubmit()}
           />
+
+
         <CurrentWeather
           currentTemperature={this.state.temp}
           feelsLike={this.state.feelsLike}
+          windSpeed={this.state.windSpeed}
           description={this.state.description}
           icon={this.state.icon}
         />

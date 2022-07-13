@@ -5,10 +5,6 @@ import { getCurrentWeather } from './../api/open-weather-api.js';
 
 class SearchBar extends React.Component {
 
-  //This is extra, but lets just add it in there for now,
-  //this is basically the generic search bar
-
-
   constructor(props) {
     super(props);
   }
@@ -22,6 +18,7 @@ class SearchBar extends React.Component {
 
     this.props.formSubmitted();
   }
+
 
 
   render() {
@@ -43,6 +40,7 @@ class SearchBar extends React.Component {
             value={location}
             onChange={e => this.onInputChange(e)}
             />
+
         </form>
       </div>
     )
