@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1024px){
+
+}
+
+@media (max-width: 1000px){
+  .current-weather__app{
+    width: 640px !important;
+
+    .current-weather__content{
+      .clouds{
+        .left-cloud{
+          background-size:contain;
+
+        }
+      }
+    }
+  }
+
+  .forecast{
+    margin-left: 17px;
+    margin-top: -18px;
+    .forecast__item{
+      width: 122px;
+    }
+  }
+}

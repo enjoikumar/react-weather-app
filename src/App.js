@@ -4,6 +4,7 @@ import React from 'react';
 import './assets/main.scss';
 import './assets/forecast.scss';
 import './assets/current.scss';
+import './assets/responsive.scss';
 
 
 

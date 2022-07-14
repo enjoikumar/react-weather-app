@@ -31,6 +31,7 @@
     height: 468px;
     background-image: url('./images/dallas.png');
     background-size: cover;
+    background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
 
@@ -41,11 +42,26 @@
       .left-cloud{
         margin-top: 100px;
         margin-left: -45px;
+        width: 146px;
+        height: 84px;
+        background-image: url('./images/leftCloud.png');
+        background-size: cover;
+        background-repeat: no-repeat;
       }
 
       .right-cloud{
-        margin-top: 20px;
+        margin-top: 40px;
         margin-right: -75px;
+        width: 208px;
+        height: 114px;
+        background-image: url('./images/rightCloud.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media(max-width: 1000px){
+          width: 170px !important;
+          margin-right: -55px !important;
+          background-size: contain !important;
+        }
       }
     }
 
