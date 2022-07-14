@@ -5,6 +5,10 @@ import { getCurrentWeather } from './../api/open-weather-api.js';
 
 class SearchBar extends React.Component {
 
+  componentDidMount(){
+
+  }
+
   constructor(props) {
     super(props);
   }
@@ -29,7 +33,7 @@ class SearchBar extends React.Component {
     return (
       <div>
         <form onSubmit={(e) => this.onFormSubmit(e)}>
-          <button type="submit">
+          <button type="submit" className="buttonSubmit">
             search
           </button>
 

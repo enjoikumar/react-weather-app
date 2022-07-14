@@ -38,7 +38,6 @@ class App extends React.Component {
   onFormSubmit(){
 
     getCurrentWeather(this.state.location).then((res) => {
-      console.log(res.data)
       this.setState({
         temp: res.data.main.temp,
         feelsLike: res.data.main.feels_like,
