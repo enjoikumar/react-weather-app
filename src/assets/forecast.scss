@@ -1,7 +1,15 @@
 .forecast{
   display: flex;
-  .forecast__item{
+  justify-content: center;
 
+  .forecast__item{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+    width: 166.5px;
+    background-color: white;
+    color: #4A4A4A;
   }
 }
- 

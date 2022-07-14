@@ -10,7 +10,8 @@ class Forecast extends React.Component {
 
       return(
         <div className="forecast__item" key={i}>
-          <p>temperature: {f.main.temp}</p>
+          <img className="" alt="" src={url}/>
+          <p>{f.main.temp}°</p>
         </div>
       )
     });
