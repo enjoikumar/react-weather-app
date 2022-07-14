@@ -84,6 +84,7 @@ class CurrentWeather extends React.Component {
                 : this.props.icon == '10n' ? cloudDrizzle
                 : this.props.icon == '01n' ? cloudSun
                 : this.props.icon == '02n' ? cloudSun
+                : this.props.icon == '02d' ? cloudSun
                 : this.props.icon == '01d' ? cloudSun
                 : this.props.icon == '10d' ? cloudDrizzleSun
                 : <img className="current-weather__icon" alt="" src={url} />
@@ -97,12 +98,12 @@ class CurrentWeather extends React.Component {
               <p className="current-weather__windspeed">{this.props.windSpeed}</p></div>
             </div>
 
-            <div class="toggle-button-cover">
-              <div class="button-cover">
-                <div class="button r" id="button-1">
-                  <input type="checkbox" class="checkbox" />
-                  <div class="knobs"></div>
-                  <div class="layer"></div>
+            <div className="toggle-button-cover">
+              <div className="button-cover">
+                <div className="button r" id="button-1">
+                  <input type="checkbox" className="checkbox" />
+                  <div className="knobs"></div>
+                  <div className="layer"></div>
                 </div>
               </div>
           </div>

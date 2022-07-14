@@ -7,7 +7,6 @@ class Forecast extends React.Component {
 
     const forecastItems = this.props.forecast.map((f, i) => {
 
-
       const url1 =`http://openweathermap.org/img/wn/${f.weather[0].icon}@2x.png`
 
       const cloudDrizzleSun =(
@@ -57,11 +56,12 @@ class Forecast extends React.Component {
       return(
         <div className="forecast__item" key={i}>
 
-          <p className="forecast__item-date">{f.dt}</p>
+          <p className="forecast__item-date">{f.dt_txt}</p>
           <div className="forecast__item-img">
             {
               f.weather[0].icon == '03n' ? cloudSun
               : f.weather[0].icon == '10n' ? cloudDrizzle
+              : f.weather[0].icon == '02d' ? cloudSun
               : f.weather[0].icon == '01n' ? cloudSun
               : f.weather[0].icon == '02n' ? cloudSun
               : f.weather[0].icon == '01d' ? cloudSun
@@ -75,7 +75,6 @@ class Forecast extends React.Component {
     });
 
 
-
     return(
       <div className="forecast">
         {forecastItems}
@@ -85,10 +84,3 @@ class Forecast extends React.Component {
 }
 
 export default Forecast;
-
-
-// 03n = scattered clouds
-// 10n = light gradient
-// 02n = few clouds
-// 01d = clear
-// 10d = light rain
