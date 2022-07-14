@@ -7,10 +7,12 @@
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     width: 164px;
     min-height: 122px;
+    max-height: 122px;
+    height: 122px;
     background-color: white;
     color: #4A4A4A;
     padding: 16px 0px;
@@ -32,6 +34,12 @@
     .forecast__item-img{
       width: 45px;
       height: 47px;
+      padding: 9px 0px;
+
+      svg{
+        width: 45px;
+        height: 47px;
+      }
     }
 
     .forecast__item-temp{

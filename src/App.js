@@ -50,6 +50,7 @@ class App extends React.Component {
     });
 
     getForecast(this.state.location).then((res) => {
+      console.log(res.data.list)
       this.setState({
         forecast: res.data.list
       })
