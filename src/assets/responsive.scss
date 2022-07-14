@@ -1,6 +1,4 @@
-@media only screen and (min-width: 1024px){
 
-}
 
 @media (max-width: 1000px){
   .current-weather__app{
@@ -23,4 +21,18 @@
       width: 122px;
     }
   }
+
+  .toggle-button-cover{
+    .button {
+      margin-right: 60px;
+      }
+    }
+}
+
+@media(width: 820px){
+  .toggle-button-cover{
+    .button {
+      margin-right: 80px;
+      }
+    }
 }
