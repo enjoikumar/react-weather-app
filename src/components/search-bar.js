@@ -33,10 +33,7 @@ class SearchBar extends React.Component {
     return (
       <div>
         <form onSubmit={(e) => this.onFormSubmit(e)}>
-          <button type="submit" className="buttonSubmit">
-            search
-          </button>
-
+          
           <input
             id="search"
             type="text"
@@ -44,6 +41,9 @@ class SearchBar extends React.Component {
             value={location}
             onChange={e => this.onInputChange(e)}
             />
+            <button type="submit" className="buttonSubmit">
+              search
+            </button>
 
         </form>
       </div>

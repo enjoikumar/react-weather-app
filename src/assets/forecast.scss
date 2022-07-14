@@ -24,11 +24,12 @@
     }
     &:nth-of-type(1){
       border-left: solid 2px #D8D8D8;
-
     }
 
     .forecast__item-date{
       margin: 0;
+      font-weight: 600;
+      font-size: 14px;
     }
 
     .forecast__item-img{

@@ -36,3 +36,77 @@
       }
     }
 }
+
+
+@media(max-width:650px){
+  .current-weather{
+    padding-top: 40px;
+  }
+  .current-weather__app{
+    width: 375px !important;
+    height: 224px !important;
+    background-size: contain !important;
+
+
+    .current-weather__content{
+      padding-left: 28px !important;
+      padding-top: 17px !important;
+
+      .current-weather__temp{
+        font-size: 22px !important;
+        line-height: 31px;
+      }
+      .current-weather__icon{
+        padding: 0 13px 0px 3px;
+        svg{
+          width: 25px;
+        }
+      }
+
+      .current-weather__description{
+        font-size: 12px !important;
+      }
+    }
+  }
+
+
+  .toggle-button-cover{
+    .button {
+      margin-right: 10px;
+      margin-top: -76px;
+      height: 32px;
+      .knobs{
+        z-index: 2;
+        &::before{
+          top: 3px;
+          left: 4px;
+          width: 15px;
+          height: 6px;
+          line-height: 8px;
+        }
+      }
+    }
+  }
+
+  #button-1 .checkbox:checked + .knobs:before {
+    left: 26px !important;
+  }
+
+
+  .forecast{
+    margin-left: 16px;
+    margin-top: -18px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .forecast__item{
+      width: 355px;
+
+      &:nth-of-type(1n){
+        border-left: solid 2px #D8D8D8;
+      }
+
+
+    }
+  }
+
+}
