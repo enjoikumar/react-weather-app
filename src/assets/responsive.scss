@@ -1,6 +1,24 @@
 
 
 @media (max-width: 1000px){
+
+  .App{
+    height: 100vh;
+  }
+
+  .form-container{
+    margin-left: 470px;
+    margin-top: 15px;
+
+
+    .searchSubmit{
+    }
+
+    .buttonSubmit{
+    }
+  }
+
+
   .current-weather__app{
     width: 640px !important;
 
@@ -39,8 +57,34 @@
 
 
 @media(max-width:650px){
+.form-container{
+  margin-left: 198px;
+  margin-top: 60px;
+
+  .searchSubmit{
+    padding: 5px;
+    width: 100px;
+  }
+
+  .buttonSubmit{
+    padding: 5px;
+  }
+}
+
+
   .current-weather{
-    padding-top: 40px;
+    padding-top: 60px;
+
+    .static-date{
+      text-align: left;
+      margin-left: 20px;
+      margin-top: -10px;
+      padding-bottom: 10px;
+
+      .static-date__location-container{
+        justify-content: flex-start;
+      }
+    }
   }
   .current-weather__app{
     width: 375px !important;

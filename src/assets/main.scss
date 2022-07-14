@@ -5,3 +5,29 @@
   background: linear-gradient(15deg, rgba(2,0,36,1) 0%, rgba(18,95,164,1) 50%, rgba(75,202,233,1) 100%);
   font-family: 'Open Sans', sans-serif;
 }
+
+.form-container{
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 225px;
+  z-index: 5;
+
+  .searchSubmit{
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+  }
+
+  .buttonSubmit{
+    box-shadow: none;
+    background-color: #0A122A;
+    border: 1px solid transparent;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 10px;
+  }
+
+}

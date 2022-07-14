@@ -21,7 +21,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      location: 'dallas',
+      location: 'Dallas',
       temp: '',
       feelsLike: '',
       description: '',
@@ -70,6 +70,7 @@ class App extends React.Component {
 
 
         <CurrentWeather
+          location={this.state.location}
           currentTemperature={this.state.temp}
           feelsLike={this.state.feelsLike}
           windSpeed={this.state.windSpeed}
