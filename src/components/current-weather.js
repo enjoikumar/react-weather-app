@@ -82,6 +82,7 @@ class CurrentWeather extends React.Component {
               {
                 this.props.icon == '03n' ? cloudSun
                 : this.props.icon == '10n' ? cloudDrizzle
+                : this.props.icon == '03d' ? cloudSun
                 : this.props.icon == '01n' ? cloudSun
                 : this.props.icon == '02n' ? cloudSun
                 : this.props.icon == '02d' ? cloudSun
