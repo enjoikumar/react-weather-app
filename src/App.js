@@ -3,6 +3,8 @@ import './App.css';
 import React from 'react';
 import './assets/main.scss';
 import './assets/forecast.scss';
+import './assets/current.scss';
+
 
 
 import SearchBar from './components/search-bar';

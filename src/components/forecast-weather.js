@@ -36,11 +36,3 @@ class Forecast extends React.Component {
 }
 
 export default Forecast;
-
-
-// return(
-//   <p>temperature: {f.main.temp}</p>
-// <img className="" alt="" src={url}/>
-// <p>day of the week {f.dt_txt}</p>
-// <p>date {f.dt}</p>
-// )
